@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-
+import Intro from './components/intro.js';
 
 
 //Function Component -> Properties
@@ -104,6 +104,8 @@ class App extends Component{
         <Clicker/>
 
         <Toggle/>
+
+        <Intro/>
 
       </header>
     </div>
