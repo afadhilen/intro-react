@@ -1,4 +1,4 @@
-Simple TO-DO List using REACTJS
+# Simple TO-DO List using REACTJS
 
 This is one of the outcome from the 'Belajar React JS Dari Awal Buat Yang Nggak Jago JavaScript' tutorial video.
 Available on: https://www.youtube.com/watch?v=JS5w4rUbjQE
