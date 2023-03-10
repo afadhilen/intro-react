@@ -5,6 +5,8 @@ Available on: https://www.youtube.com/watch?v=JS5w4rUbjQE
 
 Credit goes to 'array id' youtube channel ft. Bang Nauval Azhar - https://github.com/nauvalazhar
 
+Project Preview: https://todo-react-afadhilen.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
