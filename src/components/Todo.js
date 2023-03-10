@@ -121,41 +121,43 @@ function Todo() {
           ""
         )}
       </form>
-      <table class="styled-table">
-        <tr>
-          <th>Status</th>
-          <th>Activity</th>
-          <th>Action</th>
-          <th></th>
-        </tr>
-        {todos.map(function (todo) {
-          return (
-            <>
-              <tr key={todo.id}>
-                <td>
-                  <span>{todo.status ? "Beres" : "Belum"}</span>
-                </td>
-                <td>{todo.activity}</td>
-                <td>
-                  <button className="btn-form-edit" onClick={editTodoHandler.bind(this, todo)}>
-                    Sunting
-                  </button>
-                  <button
-                    className="btn-form-delete"
-                    onClick={removeTodoHandler.bind(this, todo.id)}
-                  >
-                    Hapus
-                  </button>
-                </td>
-                <td>
-                  <input
-                    type="checkbox"
-                    checked={todo.status}
-                    onChange={statusTodoHandler.bind(this, todo)}
-                  />
-                </td>
-              </tr>
-              {/* <li key={todo.id}>
+
+      {todos.length > 0 ? (
+        <table class="styled-table">
+          <tr>
+            <th>Status</th>
+            <th>Activity</th>
+            <th>Action</th>
+            <th></th>
+          </tr>
+          {todos.map(function (todo) {
+            return (
+              <>
+                <tr key={todo.id}>
+                  <td>
+                    <span>{todo.status ? "Beres" : "Belum"}</span>
+                  </td>
+                  <td>{todo.activity}</td>
+                  <td>
+                    <button className="btn-form-edit" onClick={editTodoHandler.bind(this, todo)}>
+                      Sunting
+                    </button>
+                    <button
+                      className="btn-form-delete"
+                      onClick={removeTodoHandler.bind(this, todo.id)}
+                    >
+                      Hapus
+                    </button>
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      checked={todo.status}
+                      onChange={statusTodoHandler.bind(this, todo)}
+                    />
+                  </td>
+                </tr>
+                {/* <li key={todo.id}>
                 {todo.status ? "Done" : "Undone"} --
                 {todo.activity}
                 <button className="btn-form" onClick={editTodoHandler.bind(this, todo)}>
@@ -170,10 +172,15 @@ function Todo() {
                   onChange={statusTodoHandler.bind(this, todo)}
                 />
               </li> */}
-            </>
-          );
-        })}
-      </table>
+              </>
+            );
+          })}
+        </table>
+      ) : (
+        <p>
+          <span>Sunyi sekali...</span>
+        </p>
+      )}
     </>
   );
 }
