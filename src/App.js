@@ -19,8 +19,8 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <Welcome />
           <Button>Klik Diriku</Button>
-          <Welcome2 children="This is ReactJS Landing Page" />
-          <Welcome2>2023</Welcome2>
+          <Welcome2 children="Todo List App using ReactJS" />
+          <Welcome2>&copy; Dhilen 2023</Welcome2>
         </header>
       </div>
       <div className="App" id="todo">

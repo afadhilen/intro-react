@@ -3,7 +3,7 @@ function Welcome() {
 }
 
 export function Welcome2(props) {
-  return <h4>{props.children}</h4>;
+  return <h6>{props.children}</h6>;
 }
 
 export default Welcome;
